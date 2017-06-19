@@ -76,7 +76,7 @@ function myFunction(x) {
       }
     }
   }
-  if (!(isNaN(list[list.length-1]))){
-    checkVal();}
+//   if (!(isNaN(list[list.length-1]))){
+//     checkVal();}
 
 }

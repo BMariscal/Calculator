@@ -147,41 +147,41 @@ body {
   background: -webkit-linear-gradient(
     left,
     #551a8b,
-    #551a8b,
     #663096,
+    #7647a2,
+    #7647a2,
+    #7647a2,
     #663096,
-    #663096,
-    #551a8b,
     #551a8b
   ); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(
     left,
     #551a8b,
-    #551a8b,
     #663096,
+    #7647a2,
+    #7647a2,
+    #7647a2,
     #663096,
-    #663096,
-    #551a8b,
     #551a8b
   ); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(
     left,
     #551a8b,
-    #551a8b,
     #663096,
+    #7647a2,
+    #7647a2,
+    #7647a2,
     #663096,
-    #663096,
-    #551a8b,
     #551a8b
   ); /* For Fx 3.6 to 15 */
   background: linear-gradient(
     left,
     #551a8b,
-    #551a8b,
     #663096,
+    #7647a2,
+    #7647a2,
+    #7647a2,
     #663096,
-    #663096,
-    #551a8b,
     #551a8b
   ); /* Standard syntax (must be last) */
 }

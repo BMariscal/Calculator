@@ -13,7 +13,7 @@ function myFunction(x) {
     if (list.length === 13 && !(isNaN(list[list.length-1]))) {
       list = [];
       list.push(answer);
-    }else if (list.length >= 13 && isNaN(list[list.length-1])) {
+    }else if (list.length === 13 && isNaN(list[list.length-1])) {
       list.pop()
       list.push(answer);
     }

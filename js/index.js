@@ -10,7 +10,7 @@ function myFunction(x) {
     let answer = eval(current_operation);
     // display.value = answer.toPrecision(4);
     display.value = answer
-    if (list.length > 12) {
+    if (list.length === 13 && !(isNaN(list[list.length-1]))) {
       list = [];
       list.push(answer);
     }

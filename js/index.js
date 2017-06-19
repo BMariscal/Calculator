@@ -5,24 +5,37 @@ let current_operation = "";
 let cancelThis = "";
 
 function myFunction(x) {
+  
+  
+  
   function checkVal() {
     console.log(current_operation);
-    let answer = eval(current_operation);
+    try{
+      
+        let answer = eval(current_operation);
     // display.value = answer.toPrecision(4);
-    display.value = answer
-    if (list.length === 13 && !(isNaN(list[list.length-1]))) {
-      list = [];
-      list.push(answer);
-    }else if (list.length === 13 && isNaN(list[list.length-1])) {
-      list.pop()
-      list.push(answer);
-    }
+        display.value = answer
+        if (list.length === 13 && !(isNaN(list[list.length-1]))) {
+            list = [];
+            list.push(answer);
+        }else {
+            list = [];
+            list.push(answer);
+          }
+    }catch(e){
+         display.value = 'ERROR'
+       }
   }
+  
+  
   function allCancel() {
     current_operation = "";
     display.value = "0";
     list = [];
   }
+  
+  
+  
   function cancelEntry() {
     let number = current_operation;
     let splitter = "";
@@ -43,10 +56,11 @@ function myFunction(x) {
     display.value = current_operation;
   }
 
-  if (list.length <= 12) {
+  if (x) {
     if (x === "=") {
       checkVal();
-    } else {
+    } 
+    else {
       list.push(x);
       display.value = list.join("");
       if (x === "x") {
@@ -61,7 +75,8 @@ function myFunction(x) {
         current_operation += x;
       }
     }
-  } else {
-    checkVal();
   }
+  if (!(isNaN(list[list.length-1]))){
+    checkVal();}
+
 }

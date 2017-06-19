@@ -1,13 +1,13 @@
 display = document.querySelector("input");
 
-let list = []; //limit to size 12
-let current_operation = "";
-let cancelThis = "";
+let list = []; //values displayed
+let current_operation = ""; //values calculated
+
 
 function myFunction(x) {
   
   
-  
+  //Calculate and display answer after '=' button is pressed
   function checkVal() {
     console.log(current_operation);
     try{
@@ -27,7 +27,7 @@ function myFunction(x) {
        }
   }
   
-  
+    //When AC button's pressed
   function allCancel() {
     current_operation = "";
     display.value = "0";
@@ -35,7 +35,7 @@ function myFunction(x) {
   }
   
   
-  
+  //When CE button's pressed
   function cancelEntry() {
     let number = current_operation;
     let splitter = "";
@@ -55,7 +55,7 @@ function myFunction(x) {
     list = newdisplay;
     display.value = current_operation;
   }
-
+  //builds current_operation/calls checkVal() when '=' is pressed/calls AC and CE functions
   if (x) {
     if (x === "=") {
       checkVal();
@@ -76,7 +76,5 @@ function myFunction(x) {
       }
     }
   }
-//   if (!(isNaN(list[list.length-1]))){
-//     checkVal();}
 
 }

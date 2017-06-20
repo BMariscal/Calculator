@@ -55,8 +55,8 @@ function myFunction(x) {
     }
     let newdisplay = number.split(splitter);
     newdisplay.pop();
-    current_operation = newdisplay.join("");
-    list = newdisplay;
+    current_operation = newdisplay.join("")+splitter;
+    list = newdisplay+splitter;
     display.value = current_operation;
   }
   //builds current_operation/calls checkVal() when '=' is pressed/calls AC and CE functions

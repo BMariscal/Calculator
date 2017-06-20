@@ -54,10 +54,14 @@ function myFunction(x) {
       }
     }
     let newdisplay = number.split(splitter);
+    list.join('')
+    list.split(splitter)
+    list.pop()
     newdisplay.pop();
     current_operation = newdisplay.join("");
-    list = newdisplay;
-    display.value = current_operation;
+//     list = newdisplay;
+//     display.value = current_operation;
+    display.value = list.join('')
   }
   //builds current_operation/calls checkVal() when '=' is pressed/calls AC and CE functions
   if (x) {

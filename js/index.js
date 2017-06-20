@@ -41,7 +41,9 @@ function myFunction(x) {
 
   //When CE button's pressed
   function cancelEntry() {
+    console.log(list)
     list.pop()
+    console.log(list)
     let number = current_operation;
     let splitter = "";
 
@@ -56,7 +58,9 @@ function myFunction(x) {
     }
     let newdisplay = number.split(splitter);
     list.join('')
+    console.log(list)
     list.split(splitter)
+    console.log(list)
     list.pop()
     newdisplay.pop();
     current_operation = newdisplay.join("");

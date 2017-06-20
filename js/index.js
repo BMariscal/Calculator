@@ -59,7 +59,15 @@ function myFunction(x) {
     let newdisplay = number.split(splitter);
     list = list.join('')
     console.log(list)
-    list = list.split(splitter)
+    
+    
+    if(splitter === '/'){
+      let list_splitter = '÷';
+    }else if (splitter === '*'){
+      let list_splitter = 'x';
+    }
+    
+    list = list.split(list_splitter)
     console.log(list)
     list.pop()
     newdisplay.pop();

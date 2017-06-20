@@ -41,6 +41,7 @@ function myFunction(x) {
 
   //When CE button's pressed
   function cancelEntry() {
+    list.pop()
     let number = current_operation;
     let splitter = "";
 

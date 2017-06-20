@@ -61,12 +61,15 @@ function myFunction(x) {
     console.log(list)
     
     console.log(typeof splitter)
+    let list_splitter = '';
     
-    
-    if(splitter === '/'){
-      let list_splitter = '÷';
-    }else if (splitter === '*'){
-      let list_splitter = 'x';
+    if(splitter == /){
+      list_splitter = '÷';
+    }else if (splitter == *){
+      list_splitter = 'x';
+    }else{
+      list_splitter = splitter;
+      
     }
     
     list = list.split(list_splitter)

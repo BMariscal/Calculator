@@ -50,8 +50,8 @@ function myFunction(x) {
     if (!isNaN(number[number.length - 1])) {
       for (let i = number.length - 1; i >= 0; i--) {
         if (isNaN(number[i])) {
-          console.log(number[i]);
           splitter += number[i];
+          console.log(splitter)
           break;
         }
       }

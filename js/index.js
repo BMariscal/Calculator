@@ -63,9 +63,9 @@ function myFunction(x) {
     console.log(typeof splitter)
     let list_splitter = '';
     
-    if(splitter == /){
+    if(splitter === '/'){
       list_splitter = '÷';
-    }else if (splitter == *){
+    }else if (splitter === '*'){
       list_splitter = 'x';
     }else{
       list_splitter = splitter;

@@ -60,6 +60,8 @@ function myFunction(x) {
     list = list.join('')
     console.log(list)
     
+    console.log(typeof splitter)
+    
     
     if(splitter === '/'){
       let list_splitter = '÷';

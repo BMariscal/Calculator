@@ -59,7 +59,7 @@ function myFunction(x) {
     let newdisplay = number.split(splitter);
     list = list.join('')
     console.log(list)
-    list.split(splitter)
+    list = list.split(splitter)
     console.log(list)
     list.pop()
     newdisplay.pop();

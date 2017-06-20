@@ -57,7 +57,7 @@ function myFunction(x) {
       }
     }
     let newdisplay = number.split(splitter);
-    list.join('')
+    list = list.join('')
     console.log(list)
     list.split(splitter)
     console.log(list)

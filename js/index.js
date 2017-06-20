@@ -18,10 +18,12 @@ function myFunction(x) {
         if (list.length === 13 && !(isNaN(list[list.length-1]))) {
             list = [];
             list.push(answer);
+            current_operation = answer.toString();
             console.log(current_operation)
         }else {
             list = [];
             list.push(answer);
+            current_operation = answer.toString();
             console.log(current_operation)
           }
     }catch(e){

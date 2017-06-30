@@ -54,8 +54,12 @@ function myFunction(x) {
           
               newdisplay = number.split('').pop()
               list.pop()
+              list.pop()
+              console.log(list)
               current_operation = newdisplay.join('');
+              
               display.value = list.join('')
+              console.log(display.value)
               return 
         }
       }

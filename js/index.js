@@ -43,16 +43,24 @@ function myFunction(x) {
     list.pop()
     let number = current_operation;
     let splitter = "";
+    let newdisplay = "";
 
     if (!isNaN(number[number.length - 1])) {
       for (let i = number.length - 1; i >= 0; i--) {
         if (isNaN(number[i])) {
           splitter += number[i];
           break;
+        }else{
+          
+              newdisplay = number.split('').pop()
+              list.pop()
+              current_operation = newdisplay.join('');
+              display.value = list.join('')
+              return 
         }
       }
     }
-    let newdisplay = number.split(splitter);
+    newdisplay = number.split(splitter);
     list = list.join('')
     let list_splitter = '';
     
@@ -67,7 +75,7 @@ function myFunction(x) {
     list = list.split(list_splitter)
     list.pop()
     newdisplay.pop();
-    current_operation = newdisplay.join("");
+    current_operation = newdisplay.join('');
 //     list = newdisplay;
 //     display.value = current_operation;
     display.value = list.join('')

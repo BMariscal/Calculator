@@ -50,17 +50,6 @@ function myFunction(x) {
         if (isNaN(number[i])) {
           splitter += number[i];
           break;
-        }else{
-          
-              newdisplay = number.split('').pop()
-              list.pop()
-              list.pop()
-              console.log(list)
-              current_operation = newdisplay.join('');
-              
-              display.value = list.join('')
-              console.log(display.value)
-              return 
         }
       }
     }
@@ -79,9 +68,9 @@ function myFunction(x) {
     list = list.split(list_splitter)
     list.pop()
     newdisplay.pop();
+    console.log(newdisplay)
+    console.log(list)
     current_operation = newdisplay.join('');
-//     list = newdisplay;
-//     display.value = current_operation;
     display.value = list.join('')
   }
   

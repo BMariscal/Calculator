@@ -43,10 +43,7 @@ function myFunction(x) {
     list.pop()
     list.pop()
     current_operation = list.join('')
-    display.value = list.join('')
-    
-    
-    
+    display.value = list.join('')     
   }
   
   

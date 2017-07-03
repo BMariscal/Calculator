@@ -48,10 +48,10 @@ function myFunction(x) {
 
     for (let i=0; i < list.length; i++){
       
-        if(list[i] === '/'){
-          newlisting.push('÷');
-        }else if (list[i] === '*'){
-          newlisting.push('x');
+        if(list[i] === '÷'){
+          newlisting.push('/');
+        }else if (list[i] === 'x'){
+          newlisting.push('*');
         }else{
           newlisting.push(list[i]);
         }

@@ -40,10 +40,30 @@ function myFunction(x) {
 
   //When CE button's pressed
   function cancelEntry() {
+    let newlisting = [];
     list.pop()
     list.pop()
-    current_operation = list.join('')
-    display.value = list.join('')     
+
+    //current_operation = list.join('')
+
+    for (let i=0; i < list.length; i++){
+      
+        if(list[i] === '/'){
+          newlisting.push('÷');
+        }else if (list[i] === '*'){
+          newlisting.push('x');
+        }else{
+          newlisting.push(list[i]);
+        }
+
+    }
+    
+    
+     current_operation = newlisting.join('')
+    
+    
+    
+    display.value = list.join('') 
   }
   
   

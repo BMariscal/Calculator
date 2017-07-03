@@ -58,8 +58,10 @@ function myFunction(x) {
 
     }
     
+    console.log(newlisting)
     
      current_operation = newlisting.join('')
+    console.log(current_operation)
     
     
     

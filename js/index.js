@@ -41,37 +41,12 @@ function myFunction(x) {
   //When CE button's pressed
   function cancelEntry() {
     list.pop()
-    let number = current_operation;
-    let splitter = "";
-    let newdisplay = "";
-
-    if (!isNaN(number[number.length - 1])) {
-      for (let i = number.length - 1; i >= 0; i--) {
-        if (isNaN(number[i])) {
-          splitter += number[i];
-          break;
-        }
-      }
-    }
-    newdisplay = number.split(splitter);
-    list = list.join('')
-    let list_splitter = '';
-    
-    if(splitter === '/'){
-      list_splitter = '÷';
-    }else if (splitter === '*'){
-      list_splitter = 'x';
-    }else{
-      list_splitter = splitter;  
-    }
-    
-    list = list.split(list_splitter)
     list.pop()
-    newdisplay.pop();
-    console.log(newdisplay)
-    console.log(list)
-    current_operation = newdisplay.join('');
+    current_operation = list.join('')
     display.value = list.join('')
+    
+    
+    
   }
   
   

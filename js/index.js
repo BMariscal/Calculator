@@ -3,13 +3,9 @@ display = document.querySelector("input");
 let list = []; //values displayed
 let current_operation = ""; //values calculated
 
-
 function myFunction(x) {
-
-
   //Calculate and display answer after '=' button is pressed
   function checkVal() {
-
     try{
         let answer = eval(current_operation);
     // display.value = answer.toPrecision(4);
@@ -19,7 +15,7 @@ function myFunction(x) {
             list.push(answer);
             current_operation = answer.toString();
          
-        }else {
+         }else {
             list = [];
             list.push(answer);
             current_operation = answer.toString();
@@ -57,15 +53,14 @@ function myFunction(x) {
         }
 
     }
+ 
+    current_operation = newlisting.join('')
+    if (current_operation.length === 0){
+      display.value = "0"
+    }else{
+      display.value = list.join('') 
+    }
     
-    console.log(newlisting)
-    
-     current_operation = newlisting.join('')
-    console.log(current_operation)
-    
-    
-    
-    display.value = list.join('') 
   }
   
   

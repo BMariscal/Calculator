@@ -1,4 +1,4 @@
 # Calculator
   * Basic functionality
-  * Responsive page
+  * Responsive design
 
